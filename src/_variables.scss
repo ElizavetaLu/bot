@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+$contrast_text_color:  #fff;
+$light_text_color:  #626a89;
+$light_border_color:  #cbcfe1;
+$dark_text_color:  #252525;
+$main_blue: #275bdd;
+$main_panels_color: #27315e;
+
+
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}

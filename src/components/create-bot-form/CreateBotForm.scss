@@ -1,0 +1,69 @@
+@import "../../variables";
+
+
+.bot-form {
+    font-size: 1.4vw;
+    display: flex;
+    flex-direction: column;
+
+    .error-msg {
+        min-width: 375px;
+        padding: 8px 13px;
+        color: rgba(199, 31, 31, 0.89);
+    }
+
+    .input-container {
+        border: 1.8px solid $light_border_color;
+        padding: 8px 13px;
+        background-color: #fbfcff;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        .data-input {
+            height: 30px;
+            background-color: transparent;
+            font-size: 1.4vw;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+    }
+
+    .title{
+        margin: 20px 0px 7px;
+    }
+
+    .sreate-btn-container {
+        width: 100%;
+
+        .create-btn {
+            margin-top: 20px;
+            height: 50px;
+            width: 100%;
+            border: none;
+            padding: 1.6vh 18.6vh;
+            text-transform: uppercase;
+            font-size: 20px;
+            background-color: #27315e;
+            cursor: pointer;
+            transition: 0.2s;
+            color: $contrast_text_color;
+        }
+
+        .create-btn:hover {
+            background-color: #27315ef3;
+        }
+
+        .create-btn:active {
+            background-color: #27315e;
+        }
+    }
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+        background-color: rgb(212, 22, 22);
+    }
+}

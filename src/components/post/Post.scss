@@ -1,0 +1,67 @@
+@import "../../variables";
+
+.post {
+    width: 52vw;
+    margin: 2vw 0vw;
+    @include flex-column;
+
+    .card-header {
+        display: flex;
+        align-items: flex-start;
+
+        .user {
+            margin-right: 20px;
+
+            .user-icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .header-data{
+            @include flex-column;
+
+            .name {
+                font-size: 1.8vw;
+                margin-right: 3vw;
+                margin-bottom: 4px;
+            }
+    
+            .data {
+                font-weight: 400;
+                font-size: 1.2vw;
+                color: #0000009c;
+            }
+        }
+    }
+
+    .image-container {
+        height: 40vh;
+        width: 52vw;
+        position: relative;
+        overflow: hidden;
+
+        .img-filter {
+            position: absolute;
+            background: #fff;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 91%);
+            height: 40vh;
+            width: 52vw;
+        }
+
+        .post-img {
+            width: 52vw;
+            border-radius: 2px;
+        }
+    }
+
+
+    .text {
+        margin: 1vh 0vh;
+        font-size: 1.3vw;
+        text-align: justify;
+        word-break: break-all;
+    }
+
+
+}

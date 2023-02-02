@@ -1,0 +1,132 @@
+@import "../../variables";
+
+
+.settings {
+
+    .bot-tools {
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .table {
+            background-color: rgba(255, 255, 255, 0.516);
+            border-collapse: collapse;
+            box-shadow: 1px 1px 8px #ddd;
+            border-radius: 2px;
+            font-size: 20px;
+
+            thead {
+                background-color: $main_panels_color;
+                color: $contrast_text_color;
+
+                tr {
+                    border-bottom: 1px solid $light_text_color;
+
+                    th {
+                        min-width: 150px;
+                        padding: 16px;
+                        letter-spacing: 0.2px;
+                        text-transform: uppercase;
+                        border-right: 1px solid $light_text_color;
+                    }
+
+                    th:nth-last-child(1) {
+                        border-right: none;
+                    }
+                }
+            }
+
+            tbody {
+
+                tr {
+                    width: 100%;
+                    border-bottom: 1px solid $light_text_color;
+
+                    td {
+                        padding: 12px 30px 12px 8px;
+                        border-right: 1px solid $light_text_color;
+                        min-width: 150px;
+                        max-width: 24vw;
+                        word-wrap: break-word;
+                        position: relative;
+
+                        .t-item {
+                            display: flex;
+                            align-items: center;
+
+
+                            .icon {
+                                @include flex-center;
+                                margin-right: 20px;
+
+                                .t-icon {
+                                    max-width: 30px;
+                                }
+                            }
+                        }
+
+                        .data {
+                            @include flex-column;
+                        }
+
+                        .edit {
+                            position: absolute;
+                            top: 0px;
+                            right: 3px;
+                            @include flex-column;
+                            align-items: flex-start;
+                            color: $light_text_color;
+
+
+                            .edit-icon {
+                                width: 30px;
+                                width: 30px;
+                                padding: 3px 0px;
+                                border-radius: 2px;
+                                @include flex-center;
+                                cursor: pointer;
+                                margin-bottom: 10px;
+
+                                .edit-img {
+                                    width: 22px;
+                                }
+                            }
+
+                            .edit-icon:hover {
+                                background-color: #27315ec7;
+                            }
+
+                            .save-btn{
+                                cursor: pointer;
+                                background-color: $main_panels_color;
+                                border: none;
+                                border-radius: 2px;
+                                padding: 5px 7px;
+                                color: $contrast_text_color;
+                            }
+                            .save-btn:hover{
+                                background-color: #27315eea;
+                            }
+                        }
+                    }
+
+                    td:nth-last-child(1) {
+                        border-right: none;
+                        padding-right: 60px;
+                    }
+                }
+
+                tr:nth-last-child(1) {
+                    border-bottom: none;
+                }
+
+                tr:hover {
+                    border: 1px solid $light_text_color;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bot/build/static/css/main.04a5ecfc.css",
+    "main.js": "/bot/build/static/js/main.a602cbd5.js",
+    "index.html": "/bot/build/index.html",
+    "main.04a5ecfc.css.map": "/bot/build/static/css/main.04a5ecfc.css.map",
+    "main.a602cbd5.js.map": "/bot/build/static/js/main.a602cbd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04a5ecfc.css",
+    "static/js/main.a602cbd5.js"
+  ]
+}

@@ -1,0 +1,86 @@
+@import "../../variables";
+
+
+.wrapper {
+    @include flex-center;
+    height: 100vh;
+    background-color: #eff2ff;
+
+    .container {
+        background-color: $main_panels_color;
+        border-radius: 2px;
+        @include flex-column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 70px 50px;
+        box-shadow: 4px 4px 40px #c0c0c0;
+
+        .title{
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            font-weight: 600;
+            font-size: 30px;
+            color: $contrast_text_color;
+
+        }
+
+        .auth-form {
+            width: 100%;
+            @include flex-column;
+
+            .label {
+                @include flex-column;
+                margin-bottom: 30px;
+            
+                .label-name {
+                    color: $contrast_text_color;
+                    padding-left: 20px;
+                    font-size: 23px;
+                }
+            
+                .auth-input {
+                    margin-top: 10px;
+                    padding-left: 20px;
+                    background-color: rgba(255, 255, 255, 0.172);
+                    outline: none;
+                    border: none;
+                    color: $contrast_text_color;
+                    height: 50px;
+                    border-radius: 50px;
+                    font-size: 20px;
+                    width: 350px;
+                }
+            
+                .auth-input:focus {
+                    background-color: #eff2ff9e;
+                }
+            }
+            
+            .btn-container {
+                margin-top: 30px;
+                height: 55px;
+                @include flex-center;
+                
+                .auth-btn {
+                    width: 100%;
+                    cursor: pointer;
+                    border: none;
+                    background-color: $main_blue;
+                    height: 50px;
+                    border-radius: 50px;
+                    color: $contrast_text_color;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    transition: .2s;
+                }
+            
+                .auth-btn:hover {
+                    height: 55px;
+                }
+                .auth-btn:active {
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

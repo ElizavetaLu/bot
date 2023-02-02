@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.file {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #626a8981;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+
+    .icon {
+        margin-right: 10px;
+
+        .uploaded-file-img {
+            height: 3vh;
+        }
+    }
+
+    .file-name{
+        color: $light_text_color;
+        font-size: 1vw;
+    }
+}
+
+.file:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
